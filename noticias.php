@@ -376,7 +376,7 @@
                                     <span><i class="fas fa-calendar-alt"></i> ' . date("d M Y", strtotime($noticia['fecha_publicacion'])) . '</span>
                                     <span><i class="fas fa-user"></i> ' . htmlspecialchars($noticia['usuario_nombre'] . ' ' . $noticia['usuario_apellido']) . '</span>
                                 </div>
-                                <p>' . $noticia['resumen'] . '</p>
+                                
                             </div>
                         </article>
                         </a>';
