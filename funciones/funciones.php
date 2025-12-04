@@ -239,10 +239,19 @@
     }
 
     function getTicketsProximos($mysqli, $id_usuario){
-        $sql = "SELECT r.*, ev.nombre_evento AS evento_nombre, ev.fecha_hora, ev.ubicacion
+        $sql = "SELECT r.*, 
+                ev.nombre_evento AS evento_nombre, 
+                DATE(ev.fecha_hora) AS evento_fecha,
+                TIME(ev.fecha_hora) AS evento_hora,
+                ev.ubicacion,
+                ev.es_activo,
+                td.tipo AS deporte,
+                td.tipo AS deporte_tipo,
+                r.codigo_qr
                 FROM reservas r
                 INNER JOIN entradas e ON r.entrada_id = e.entrada_id
                 INNER JOIN eventos ev ON e.evento_id = ev.evento_id
+                LEFT JOIN tipoDeporte td ON ev.id_tipoDeporte = td.id_tipoDeporte
                 WHERE r.usuario_id = ? AND ev.es_activo = 1
                 ORDER BY ev.fecha_hora ASC";
         $stmt = $mysqli->prepare($sql);
@@ -252,10 +261,19 @@
     }
 
     function getTicketsHistorico($mysqli, $id_usuario){
-        $sql = "SELECT r.*, ev.nombre_evento AS evento_nombre, ev.fecha_hora, ev.ubicacion, ev.deporte as deporte
+        $sql = "SELECT r.*, 
+                ev.nombre_evento AS evento_nombre, 
+                DATE(ev.fecha_hora) AS evento_fecha,
+                TIME(ev.fecha_hora) AS evento_hora,
+                ev.ubicacion,
+                ev.es_activo,
+                td.tipo AS deporte,
+                td.tipo AS deporte_tipo,
+                r.codigo_qr
                 FROM reservas r
                 INNER JOIN entradas e ON r.entrada_id = e.entrada_id
                 INNER JOIN eventos ev ON e.evento_id = ev.evento_id
+                LEFT JOIN tipoDeporte td ON ev.id_tipoDeporte = td.id_tipoDeporte
                 WHERE r.usuario_id = ?
                 ORDER BY ev.fecha_hora ASC";
         $stmt = $mysqli->prepare($sql);
@@ -265,10 +283,19 @@
     }
 
     function getTicketsFinalizados($mysqli, $id_usuario){
-        $sql = "SELECT r.*, ev.nombre_evento AS evento_nombre, ev.fecha_hora, ev.ubicacion
+        $sql = "SELECT r.*, 
+                ev.nombre_evento AS evento_nombre, 
+                DATE(ev.fecha_hora) AS evento_fecha,
+                TIME(ev.fecha_hora) AS evento_hora,
+                ev.ubicacion,
+                ev.es_activo,
+                td.tipo AS deporte,
+                td.tipo AS deporte_tipo,
+                r.codigo_qr
                 FROM reservas r
                 INNER JOIN entradas e ON r.entrada_id = e.entrada_id
                 INNER JOIN eventos ev ON e.evento_id = ev.evento_id
+                LEFT JOIN tipoDeporte td ON ev.id_tipoDeporte = td.id_tipoDeporte
                 WHERE r.usuario_id = ? AND ev.es_activo = 0
                 ORDER BY ev.fecha_hora ASC";
         $stmt = $mysqli->prepare($sql);
