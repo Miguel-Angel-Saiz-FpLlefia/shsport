@@ -1,5 +1,5 @@
 <?php
-    include_once "./shsport/config/config.php";
+    include_once "./config/config.php";
     include_once "funciones/funciones.php";
     session_start();
 ?>
