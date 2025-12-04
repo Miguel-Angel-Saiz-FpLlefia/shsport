@@ -936,7 +936,7 @@
                       </div>";
             } else {
                 foreach ($tickets as $ticket) {
-                    $icono = $iconosDeporte[$ticket['deporte_tipo']] ?? $iconosDeporte['default'];
+                    $icono = $iconosDeporte[$ticket['deporte']] ?? $iconosDeporte['default'];
                     $esActivo = $ticket['es_activo'] == 1;
                     $statusClass = $esActivo ? 'status-active' : 'status-used';
                     $statusText = $esActivo ? 'Activo' : 'Finalizado';
