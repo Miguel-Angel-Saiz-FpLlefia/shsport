@@ -252,7 +252,7 @@
     }
 
     function getTicketsHistorico($mysqli, $id_usuario){
-        $sql = "SELECT r.*, ev.nombre_evento AS evento_nombre, ev.fecha_hora, ev.ubicacion, ev.deporte
+        $sql = "SELECT r.*, ev.nombre_evento AS evento_nombre, ev.fecha_hora, ev.ubicacion, ev.deporte as deporte
                 FROM reservas r
                 INNER JOIN entradas e ON r.entrada_id = e.entrada_id
                 INNER JOIN eventos ev ON e.evento_id = ev.evento_id
