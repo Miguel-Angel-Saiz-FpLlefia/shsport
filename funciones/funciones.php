@@ -285,13 +285,13 @@
                 TIME(ev.fecha_hora) AS evento_hora,
                 ev.ubicacion,
                 ev.es_activo,
-                td.tipo AS deporte,
+                td.tipo AS deporte
                 FROM reservas r
                 INNER JOIN entradas e ON r.entrada_id = e.entrada_id
                 INNER JOIN eventos ev ON e.evento_id = ev.evento_id
-                LEFT JOIN tipoDeporte td ON ev.id_tipoDeporte = td.id_tipoDeporte
+                LEFT JOIN tipoDeporte td ON ev.evento_id = td.id_tipoDeporte
                 WHERE r.usuario_id = ? AND ev.es_activo = 0
-                ORDER BY ev.fecha_hora ASC";
+                ORDER BY ev.fecha_hora ASC;";
         $stmt = $mysqli->prepare($sql);
         $stmt->bind_param("i", $id_usuario);
         $stmt->execute();
