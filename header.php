@@ -57,7 +57,9 @@
         <?php
           if (isset($_SESSION['user_nom'])) {
               echo '<li><a href="tickets.php">Tickets</a></li>';
-              echo '<li><a href="adminDashboard.php">Panel admin</a></li>';
+            }
+          if (isset($_SESSION['user_rol']) && $_SESSION['user_rol'] === 1) {
+            echo '<li><a href="adminDashboard.php">Panel admin</a></li>';
           }
         ?>
       </ul>

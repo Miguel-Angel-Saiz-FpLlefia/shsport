@@ -392,6 +392,10 @@
 
     </style>
 </head>
+<?php if(!isset($_SESSION['user_rol']) || $_SESSION['user_rol'] !== 1) {
+    header("Location: index.php");
+    exit();
+} ?>
 <body>
     
     <div class="dashboard-layout">
