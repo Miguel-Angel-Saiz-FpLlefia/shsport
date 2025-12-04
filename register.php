@@ -39,8 +39,6 @@
           echo 'Error al registrar el usuario: ' . $stmt->error;
       }
 
-      $_SESSION['user_nom'] = $nom;
-
       //7. Cerramos la conexion
       $stmt->close();
       $mysqli->close();
