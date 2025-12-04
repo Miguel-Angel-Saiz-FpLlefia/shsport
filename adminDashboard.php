@@ -857,7 +857,7 @@
                                             <td>".$evento['deporte']."</td>
                                             <td>".$evento['descripcion']."</td>
                                             <td>".$evento['imagen_url']."</td>
-                                            <td>".$evento['es_Activo']."</td>
+                                            <td>".$evento['es_activo']."</td>
                                             <td class='action-btns'>
                                                 <button class='btn-edit' onclick='editarEvento(".$evento['evento_id'].", \"".addslashes($evento['nombre_evento'])."\", \"".str_replace(' ', 'T', $evento['fecha_hora'])."\", \"".addslashes($evento['ubicacion'])."\", \"".addslashes($evento['deporte'])."\", \"".addslashes($evento['descripcion'])."\", \"".addslashes($evento['imagen_url'])."\", ".$evento['es_Activo'].")'>Editar</button>
                                                 <button class='btn-delete' onclick='confirmarEliminar(\"evento\", ".$evento['evento_id'].")'>Borrar</button>
