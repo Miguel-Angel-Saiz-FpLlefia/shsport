@@ -365,7 +365,7 @@
                         <article class="news-card">
                             <div class="news-card-image">';
                     if (!empty($noticia['imagen_url'])) {
-                        echo '<img src="' . htmlspecialchars($noticia['imagen_url']) . '" alt="' . htmlspecialchars($noticia['titulo']) . '">';
+                        echo '<img src="' . htmlspecialchars($noticia['imagen_url']) . '" alt="' . $noticia['titulo'] . '">';
                     } else {
                         echo '<i class="fas fa-newspaper"></i>';
                     }
