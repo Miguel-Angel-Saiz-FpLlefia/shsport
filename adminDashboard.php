@@ -859,7 +859,7 @@
                                             <td>".$evento['imagen_url']."</td>
                                             <td>".$evento['es_activo']."</td>
                                             <td class='action-btns'>
-                                                <button class='btn-edit' onclick='editarEvento(".$evento['evento_id'].", \"".addslashes($evento['nombre_evento'])."\", \"".str_replace(' ', 'T', $evento['fecha_hora'])."\", \"".addslashes($evento['ubicacion'])."\", \"".addslashes($evento['deporte'])."\", \"".addslashes($evento['descripcion'])."\", \"".addslashes($evento['imagen_url'])."\", ".$evento['es_Activo'].")'>Editar</button>
+                                                <button class='btn-edit' onclick='editarEvento(".$evento['evento_id'].", \"".addslashes($evento['nombre_evento'])."\", \"".str_replace(' ', 'T', $evento['fecha_hora'])."\", \"".addslashes($evento['ubicacion'])."\", \"".addslashes($evento['deporte'])."\", \"".addslashes($evento['descripcion'])."\", \"".addslashes($evento['imagen_url'])."\", ".$evento['es_activo'].")'>Editar</button>
                                                 <button class='btn-delete' onclick='confirmarEliminar(\"evento\", ".$evento['evento_id'].")'>Borrar</button>
                                             </td>
                                         </tr>";
@@ -1680,7 +1680,7 @@
                                             <td>".$usuario['nombre']."</td>
                                             <td>".$usuario['apellido']."</td>
                                             <td>".$usuario['email']."</td>
-                                            <td>".$usuario['contrasenya_hash']."</td>
+                                            <td>".$usuario['contrasena_hash']."</td>
                                             <td>".$usuario['foto']."</td>
                                             <td class='action-btns'>
                                                 <button class='btn-edit' onclick='editarUsuario(".$usuario['usuario_id'].", ".$usuario['role_id'].", \"".addslashes($usuario['nombre'])."\", \"".addslashes($usuario['apellido'])."\", \"".addslashes($usuario['email'])."\", \"".addslashes($usuario['foto'])."\")'>Editar</button>
