@@ -1,6 +1,10 @@
 <?php
     include_once "./config/config.php";
     session_start();
+    if(!isset($_SESSION['user_rol']) || $_SESSION['user_rol'] !== 1) {
+        header("Location: index.php");
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -392,10 +396,6 @@
 
     </style>
 </head>
-<?php if(!isset($_SESSION['user_rol']) || $_SESSION['user_rol'] !== 1) {
-    header("Location: index.php");
-    exit();
-} ?>
 <body>
     
     <div class="dashboard-layout">
