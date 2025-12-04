@@ -615,7 +615,7 @@
     </div>
     <div class="events-container">
       <?php
-        include_once "../shSpport/funciones/funciones.php";
+        include_once "./funciones/funciones.php";
         $noticias = llegirUltimesNoticies($mysqli);
         foreach ($noticias as $noticia) {
             echo '<div class="event-card">
