@@ -1,5 +1,5 @@
 <?php
-    include_once "../shSpport/config/config.php";
+    include_once "./shsport/config/config.php";
     session_start();
 ?>
 

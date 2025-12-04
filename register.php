@@ -1,5 +1,5 @@
 <?php
-  require_once('config/config.php');
+  include_once "./shsport/config/config.php";
   session_start();
 
   //Verificar si el formulario ha sido enviado

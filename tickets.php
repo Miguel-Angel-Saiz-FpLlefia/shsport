@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'config/config.php';
+include_once "./shsport/config/config.php";
 require_once 'funciones/funciones.php';
 
 // Verificar si el usuario está logeado
