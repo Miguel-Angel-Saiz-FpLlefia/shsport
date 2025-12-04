@@ -382,7 +382,7 @@
         <div class="portfolio-container">
             
             <?php
-                include_once "funciones/funciones.php";
+                include_once "./funciones/funciones.php";
                 $row = getPortfolio($mysqli);
                 foreach ($row as $proyecto) {
                     echo '<article class="project-card" data-category="' . htmlspecialchars($proyecto['tipo']) . '">

@@ -361,7 +361,7 @@
         <div class="faqs-container">
             
             <?php
-                include_once "funciones/funciones.php";
+                include_once "./funciones/funciones.php";
                 $faqs = getFaqs($mysqli);
 
                 foreach ($faqs as $faq) {

@@ -1,7 +1,7 @@
 <?php
     include_once "./config/config.php";
     session_start();
-    include_once "funciones/funciones.php";
+    include_once "./funciones/funciones.php";
 
     $mensaje = '';
     $tipo_mensaje = '';
@@ -633,7 +633,7 @@
         <div class="testimonials-container">
             
             <?php
-                include_once "funciones/funciones.php";
+                include_once "./funciones/funciones.php";
                 $testimonios = getTestimonios($mysqli);
 
                 foreach ($testimonios as $testimonio) {

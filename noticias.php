@@ -357,7 +357,7 @@
         <div class="news-container">
             
             <?php
-                include_once "funciones/funciones.php";
+                include_once "./funciones/funciones.php";
                 $noticias = llegirNoticies($mysqli);
 
                 foreach ($noticias as $noticia) {

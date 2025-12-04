@@ -1,7 +1,7 @@
 <?php
     include_once "./config/config.php";
     session_start();
-    include_once "funciones/funciones.php";
+    include_once "./funciones/funciones.php";
 
     $noticia_id_redirect = isset($_GET['id']) ? intval($_GET['id']) : 0;
 

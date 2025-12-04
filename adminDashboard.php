@@ -513,7 +513,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $comentaris = llegitComentarisSencers($mysqli);
                                     //var_dump($comentaris);
                                     foreach($comentaris as $comentari) {
@@ -612,7 +612,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $detallesReservas = llegirDatalleResercaSencer($mysqli);
                                     foreach($detallesReservas as $detalleReserva) {
                                         echo "<tr>
@@ -712,7 +712,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $entrades = llegirentradesSencer($mysqli);
                                     foreach($entrades as $entrada) {
                                         echo "<tr>
@@ -846,7 +846,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $eventos = llegirEventosSencer($mysqli);
                                     foreach($eventos as $evento) {
                                         echo "<tr>
@@ -932,7 +932,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $faqs = llegirFaqsSencer($mysqli);
                                     foreach($faqs as $faq) {
                                         echo "<tr>
@@ -1041,7 +1041,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $noticias = llegirNoticiasSencer($mysqli);
                                     foreach($noticias as $noticia) {
                                         echo "<tr>
@@ -1177,7 +1177,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $portfolios = llegirPortfolioSencer($mysqli);
                                     foreach($portfolios as $portfolio) {
                                         echo "<tr>
@@ -1281,7 +1281,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $reservas = llegirReservasSencer($mysqli);
                                     foreach($reservas as $reserva) {
                                         echo "<tr>
@@ -1355,7 +1355,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $roles = llegirRolesSencer($mysqli);
                                     foreach($roles as $rol) {
                                         echo "<tr>
@@ -1478,7 +1478,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $testimonios = llegirTestimoniosSencer($mysqli);
                                     foreach($testimonios as $testimonio) {
                                         echo "<tr>
@@ -1555,7 +1555,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $tiposDeporte = llegirTipoDeporteSencer($mysqli);
                                     foreach($tiposDeporte as $tipoDeporte) {
                                         echo "<tr>
@@ -1671,7 +1671,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $usuarios = llegirUsuarisSencer($mysqli);
                                     foreach($usuarios as $usuario) {
                                         echo "<tr>
@@ -1766,7 +1766,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    include_once "funciones/funciones.php";
+                                    include_once "./funciones/funciones.php";
                                     $zonas = llegirZonasSencer($mysqli);
                                     foreach($zonas as $zona) {
                                         echo "<tr>
