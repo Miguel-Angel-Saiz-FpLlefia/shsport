@@ -246,8 +246,6 @@
                 ev.ubicacion,
                 ev.es_activo,
                 td.tipo AS deporte,
-                td.tipo AS deporte_tipo,
-                r.codigo_qr
                 FROM reservas r
                 INNER JOIN entradas e ON r.entrada_id = e.entrada_id
                 INNER JOIN eventos ev ON e.evento_id = ev.evento_id
@@ -268,8 +266,6 @@
                 ev.ubicacion,
                 ev.es_activo,
                 td.tipo AS deporte,
-                td.tipo AS deporte_tipo,
-                r.codigo_qr
                 FROM reservas r
                 INNER JOIN entradas e ON r.entrada_id = e.entrada_id
                 INNER JOIN eventos ev ON e.evento_id = ev.evento_id
@@ -290,8 +286,6 @@
                 ev.ubicacion,
                 ev.es_activo,
                 td.tipo AS deporte,
-                td.tipo AS deporte_tipo,
-                r.codigo_qr
                 FROM reservas r
                 INNER JOIN entradas e ON r.entrada_id = e.entrada_id
                 INNER JOIN eventos ev ON e.evento_id = ev.evento_id
