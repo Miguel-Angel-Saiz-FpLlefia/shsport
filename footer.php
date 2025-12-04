@@ -31,8 +31,8 @@
             <div class="footer-section">
                 <h3>Soporte</h3>
                 <ul>
-                    <li><a href="faqs.html">Preguntas Frecuentes</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="faqs.php">Preguntas Frecuentes</a></li>
+                    <li><a href="contacto.php">Contacto</a></li>
                     <li><a href="#">Política de Privacidad</a></li>
                     <li><a href="#">Términos y Condiciones</a></li>
                 </ul>

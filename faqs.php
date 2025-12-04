@@ -377,7 +377,7 @@
         <div class="cta-faqs">
             <h3>¿Aún tienes dudas?</h3>
             <p>Nuestro equipo de soporte está listo para ayudarte en cualquier momento.</p>
-            <a href="contacto.html" class="btn btn-outline" style="border-color: var(--text-light); color: var(--text-light); margin-top: 1rem;">Contáctanos Directamente</a>
+            <a href="contacto.php" class="btn btn-outline" style="border-color: var(--text-light); color: var(--text-light); margin-top: 1rem;">Contáctanos Directamente</a>
         </div>
     </section>
 

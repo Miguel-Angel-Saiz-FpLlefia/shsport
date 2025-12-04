@@ -550,7 +550,7 @@
         </div>
 
         <div class="login-link">
-          ¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a>
+          ¿Ya tienes cuenta? <a href="login.php">Inicia sesión aquí</a>
         </div>
       </div>
     </div>

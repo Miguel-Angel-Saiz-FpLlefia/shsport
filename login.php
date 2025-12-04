@@ -508,7 +508,7 @@
         </div>
 
         <div class="register-link">
-          ¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>
+          ¿No tienes cuenta? <a href="registro.php">Regístrate aquí</a>
         </div>
       </div>
     </div>
